@@ -32,3 +32,7 @@ app.use("/api/v1", upload);
 app.listen(port, () => {
   console.log(`server is running on port ${port}`);
 });
+
+app.get("/",(req,res)=>{
+  res.send("hello world");
+});
